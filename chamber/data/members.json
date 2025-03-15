@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Surge Web Design",
+        "address": "4072 E Arch Drive Meridian, ID 83646",
+        "phone": "(208) 631-0640",
+        "website": "https://www.surgewebdesign.com/",
+        "image": "images/surgewebdesign.png",
+        "membership": 3
+    },
+    {
+        "name": "Tech Solutions Inc.",
+        "address": "1234 Innovation Way, Boise, ID",
+        "phone": "(208) 555-1234",
+        "website": "https://www.techsolutions.com/",
+        "image": "images/techsolutions.png",
+        "membership": 2
+    },
+    {
+        "name": "Creative Designs Studio",
+        "address": "5678 Art Lane, Nampa, ID",
+        "phone": "(208) 555-5678",
+        "website": "https://www.creativedesigns.com/",
+        "image": "images/creativedesigns.png",
+        "membership": 1
+    },
+    {
+        "name": "Marketing Pros",
+        "address": "7890 Business Blvd, Caldwell, ID",
+        "phone": "(208) 555-7890",
+        "website": "https://www.marketingpros.com/",
+        "image": "images/marketingpros.png",
+        "membership": 3
+    },
+    {
+        "name": "Elite Consulting",
+        "address": "2345 Strategy St, Eagle, ID",
+        "phone": "(208) 555-2345",
+        "website": "https://www.eliteconsulting.com/",
+        "image": "images/eliteconsulting.png",
+        "membership": 2
+    },
+    {
+        "name": "Future Innovations",
+        "address": "3456 Future Ave, Meridian, ID",
+        "phone": "(208) 555-3456",
+        "website": "https://www.futureinnovations.com/",
+        "image": "images/futureinnovations.png",
+        "membership": 1
+    },
+    {
+        "name": "NextGen Tech",
+        "address": "4567 NextGen Rd, Boise, ID",
+        "phone": "(208) 555-4567",
+        "website": "https://www.nextgentech.com/",
+        "image": "images/nextgentech.png",
+        "membership": 3
+    }
+]
