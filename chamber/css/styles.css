@@ -87,6 +87,30 @@ button {
     margin-right: 15px;
 }
 
+.hero {
+    text-align: center;
+   
+    color: rgb(51, 75, 179);
+    padding: 50px 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.weather, .spotlights, .events {
+    padding: 20px;
+    margin: 20px 0;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+
 footer {
     background-color: #003366;
     color: white;
