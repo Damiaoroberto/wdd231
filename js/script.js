@@ -29,6 +29,45 @@ document.addEventListener("DOMContentLoaded", function () {
     cseBtn.addEventListener("click", () => displayCourses("cse"));
     wddBtn.addEventListener("click", () => displayCourses("wdd"));
     
-    displayCourses(); // Show all courses by default
+    displayCourses(); 
 });
+
+
+const apiKey = "YOUR_OPENWEATHERMAP_API_KEY";
+const city = "YOUR_CITY_NAME";
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("temp").textContent = data.main.temp;
+        document.getElementById("condition").textContent = data.weather[0].description;
+    })
+    .catch(error => console.log("Error fetching weather data:", error));
+    const members = [
+        { name: "Business 1", membership: "Gold", phone: "123-456", address: "123 St", website: "https://example.com", logo: "images/logo1.png" },
+        { name: "Business 2", membership: "Silver", phone: "456-789", address: "456 St", website: "https://example.com", logo: "images/logo2.png" },
+        { name: "Business 3", membership: "Bronze", phone: "789-012", address: "789 St", website: "https://example.com", logo: "images/logo3.png" },
+    ];
+    
+    const spotlightContainer = document.getElementById("spotlight-container");
+    
+    
+    const eligibleMembers = members.filter(member => member.membership === "Gold" || member.membership === "Silver");
+    
+    const randomSpotlights = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, 2);
+    
+    
+    randomSpotlights.forEach(member => {
+        const spotlight = document.createElement("div");
+        spotlight.innerHTML = `
+            <h3>${member.name}</h3>
+            <img src="${member.logo}" alt="${member.name} logo">
+            <p>Phone: ${member.phone}</p>
+            <p>Address: ${member.address}</p>
+            <a href="${member.website}" target="_blank">Visit Website</a>
+        `;
+        spotlightContainer.appendChild(spotlight);
+    });
+    
 
